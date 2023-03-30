@@ -1,7 +1,7 @@
 # Scrub Personal Identifiable Information
 
 ## What is this?
-This is a Ruby script that will scrub personal indentifiable information from a valid `input.json` file. This script determines what information to scrub based on a `sensitive_fields.txt` file.
+Hello! This is a Ruby script that will scrub personal indentifiable information from a valid `input.json` file. This script determines what information to scrub based on a `sensitive_fields.txt` file.
 
 ## Prerequisites
 Before you continue, ensure you have met the following requirements:
@@ -21,7 +21,7 @@ Before you continue, ensure you have met the following requirements:
 
 ## How to try it out:
 - Type in `./scrub sensitive_fields.txt input.json`
-- Look for generated output in new file called new_output.json
+- Look for generated output in new file called `output.json`
 
 ## Project takeaways:
-- I got started by getting reliable specs in place and getting each to pass. Then, certain patterns were more obvious, so I revisited the code to "DRY" it up. It was a challenge to handle nested objects and arrays in a smart way. For next steps, it would be helpful to split up concepts like (validating input, looping through input, replacing input).
+I got started by getting reliable specs in place and getting each to pass. Afterward certain patterns were more obvious, so I revisited the code to "DRY" it up. I also used the RuboCop linter to help with formatting the code nicely. It was a challenge to handle nested objects and arrays in a smart way. For next steps, it would be helpful to split up concepts such as: validating input, looping through input, replacing input.
