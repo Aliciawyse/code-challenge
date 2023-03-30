@@ -35,7 +35,7 @@ class Scrub
       peronsal_info_scrubbed[data_type] = parse_personal_info(field_name: data_type, field_value: data)
     end
 
-    new_file = File.new('new_output.json', 'w')
+    new_file = File.new('output.json', 'w')
     new_file.puts(JSON.pretty_generate(peronsal_info_scrubbed))
     new_file.close
   end

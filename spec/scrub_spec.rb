@@ -32,7 +32,7 @@ describe Scrub do
     let(:arguments) { [sensitive_fields_file.path, input_json_file.path] }
 
     before do
-      allow(File).to receive(:new).with('new_output.json', 'w').and_call_original
+      allow(File).to receive(:new).with('output.json', 'w').and_call_original
     end
 
     context 'basic' do
@@ -76,7 +76,7 @@ describe Scrub do
 
       it 'scrubs basic data' do
         subject
-        expect(File.read('new_output.json')).to eq(output)
+        expect(File.read('output.json')).to eq(output)
       end
     end
 
@@ -124,7 +124,7 @@ describe Scrub do
 
       it 'scrubs data in array' do
         subject
-        expect(File.read('new_output.json')).to eq(output)
+        expect(File.read('output.json')).to eq(output)
       end
     end
 
@@ -172,7 +172,7 @@ describe Scrub do
 
       it 'scrubs boolean data' do
         subject
-        expect(File.read('new_output.json')).to eq(output)
+        expect(File.read('output.json')).to eq(output)
       end
     end
 
@@ -215,7 +215,7 @@ describe Scrub do
 
       it 'scrubs integer data' do
         subject
-        expect(File.read('new_output.json')).to eq(output)
+        expect(File.read('output.json')).to eq(output)
       end
     end
 
@@ -263,7 +263,7 @@ describe Scrub do
 
       it 'scrubs float data' do
         subject
-        expect(File.read('new_output.json')).to eq(output)
+        expect(File.read('output.json')).to eq(output)
       end
     end
 
@@ -309,7 +309,7 @@ describe Scrub do
       end
       it 'scrubs data in nested object' do
         subject
-        expect(File.read('new_output.json')).to eq(output)
+        expect(File.read('output.json')).to eq(output)
       end
     end
 
@@ -387,7 +387,7 @@ describe Scrub do
       end
       it 'scrubs data in mixed type arrays' do
         subject
-        expect(File.read('new_output.json')).to eq(output)
+        expect(File.read('output.json')).to eq(output)
       end
     end
 
@@ -436,7 +436,7 @@ describe Scrub do
 
       it 'scrubs data in nested objects' do
         subject
-        expect(File.read('new_output.json')).to eq(output)
+        expect(File.read('output.json')).to eq(output)
       end
     end
 
@@ -517,7 +517,7 @@ describe Scrub do
 
       it 'scrubs data in nested arrays' do
         subject
-        expect(File.read('new_output.json')).to eq(output)
+        expect(File.read('output.json')).to eq(output)
       end
     end
   end
