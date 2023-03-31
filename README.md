@@ -5,14 +5,13 @@ Hello! This is a Ruby script that will scrub personal indentifiable information 
 
 ## Prerequisites
 Before you continue, ensure you have met the following requirements:
-- You have installed the latest version of Ruby.
-- You are using a Linux or Mac OS machine. Windows is not currently supported.
+- You have installed the latest version of (Ruby)[https://www.ruby-lang.org/en/downloads/].
+- You are using Mac OS machine.
 
 ## How to install:
-- Clone this repo
+- Clone this repo. For example `git clone https://github.com/Aliciawyse/code-challenge.git`
 - Open this project in your code editor
-- Open terminal
-- Make sure you're in this project directory
+- Open terminal and make sure you're in this project directory `cd code-challenge`
 - Type in `bundle install`
 
 ## How to run specs:
