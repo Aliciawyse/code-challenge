@@ -10,11 +10,7 @@ describe Scrub do
     let(:arguments) { [] }
 
     it 'returns a helpful message about missing required info' do
-      expect do
-        subject
-      end.to output(
-        /Please supply two arguments: a text file with a list of sensitive fields and a JSON file of user data./
-      ).to_stdout
+      expect{subject}.to raise_error(Scrub::ScrubFileError)
     end
   end
 

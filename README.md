@@ -19,6 +19,8 @@ Before you continue, ensure you have met the following requirements:
 - There is a test case for each scenario listed in this assignment's Google Drive folder. Note that all the specs pass, except for the last one which is skipped for now.
 
 ## How to try it out:
+- Open terminal and make sure you're in this project directory `cd code-challenge`
+- Type in `chmod +x scrub.rb`. This allows you to run the program from the terminal as seen in following step.
 - Type in `./scrub.rb sensitive_fields.txt input.json`
 - Look for generated output in new file called `output.json`
 
